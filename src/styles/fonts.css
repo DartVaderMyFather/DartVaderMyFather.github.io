@@ -1,8 +1,22 @@
 @font-face {
   font-family: 'Inconsolata-VF';
-  src: url('../public/fonts/Inconsolata-VF.ttf') format('truetype');
+  src: url('/fonts/Inconsolata-VF.ttf') format('truetype');
   font-weight: 100 900; /* Диапазон весов */
   font-stretch: 50% 200%; /* Диапазон ширины (если поддерживается) */
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pixeloid Sans';
+  src: url('/fonts/PixeloidSans.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pixeloid Sans Bold';
+  src: url('/fonts/PixeloidSans-Bold.ttf') format('truetype');
+  font-style: bold;
   font-display: swap;
 }
