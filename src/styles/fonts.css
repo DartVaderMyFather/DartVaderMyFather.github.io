@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Inconsolata-VF';
+  src: url('/fonts/Inconsolata-VF.ttf') format('truetype');
+  font-weight: 100 900; /* Диапазон весов */
+  font-stretch: 50% 200%; /* Диапазон ширины (если поддерживается) */
+  font-style: normal;
+  font-display: swap;
+}
