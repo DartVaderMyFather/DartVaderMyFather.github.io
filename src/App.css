@@ -10,6 +10,7 @@
   align-content: space-between; 
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 1%; 
 
 }}
 
@@ -19,7 +20,7 @@
   margin: 1%; 
   background-color: #141414;
   border: 1px solid #4e4e4e;
-  border-radius: 40px;
+  /*border-radius: 40px;*/
 }
 
 .wave-text {
@@ -248,8 +249,8 @@
 
 
 .text{
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 1.1em;
+  line-height: 1.2;
   font-family: 'Pixeloid Sans';
   color: #7e7e7e;
   margin: 10px auto;
@@ -268,8 +269,7 @@
 
 
 /*Sliders*/
-.slFont{
- 
+.slFont{ 
   margin-bottom: '8px';
   color: #808080;
 }
@@ -279,45 +279,6 @@
   color:rgb(128, 128, 128);
 }
 
-
-/*
-@property --angle{
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
-
-.card::after, .card::before{
-  content:'';
-  
-  width: 50%;
-  height: 50%;
-  background-image: conic-gradient(from var(--angle),red ,orange,yellow,orange,red);
-  z-index: -1;
-  padding: 1.1em;  
-  top: 50%;
-  left:50%;
-  translate: -50% -37.5%;
-  border-radius: 25px;
-  animation: 3s spin linear infinite;
-}
-
-.card::before{
-  filter:blur(1rem);
-  opacity: 0.3;
-}
-
-
-@keyframes spin{
-  from{
-    --angle: 0deg;
-  }
-  to{
-    --angle: 360deg;
-  }
-}
-*/
 
 .read-the-docs {
   color: #888;

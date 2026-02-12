@@ -22,7 +22,7 @@ function ShadertoyPlane({
         iTime: { value: 0.0 }, // Начинаем с 0
         iResolution: { value: new THREE.Vector2(1, 1) },
         iTimeDelta: { value: 0.0 },
-        iFrameRate: { value: 60 },
+        iFrameRate: { value: 30 },
         iFrame: { value: 0 },  
         iChannelTime: { value: [0, 0, 0, 0] },
         iChannelResolution: { value: [new THREE.Vector2(1, 1), new THREE.Vector2(1, 1), new THREE.Vector2(1, 1), new THREE.Vector2(1, 1)] },
