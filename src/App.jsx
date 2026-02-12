@@ -31,7 +31,7 @@ function App() {
     <>
       <div>
         {/*<img src={fire} width={200} alt="Fire effect" />*/}  
-        <h1>Web React JSX Front-End Motion Graphics Artem Grechko 2026</h1>
+        <h1>Web React JSX frontend Motion Graphics Artem Grechko 2026</h1>
       </div> 
 
 
