@@ -6,9 +6,11 @@
 
 @media  (min-width: 20vw){  
 .wrapper {
-  display:inline-flex;
-  justify-items:stretch;
+  display: flex;
+  align-content: space-between; 
+  justify-content: space-between;
   flex-wrap: wrap;
+
 }}
 
 .card {
