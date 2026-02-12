@@ -113,7 +113,7 @@ function App() {
         
         <div style={{
           textAlign: 'center',
-          fontSize: '5em',
+          fontSize: '350%',
           margin: '0%',
           transformOrigin: 'center center',
         }}>
