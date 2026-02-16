@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import React, { Suspense } from 'react'
+import Lazy3DPreview from './components/Lazy3DPreview';
 import OMGScene from './components/OMG'
 import './styles/fonts.css'
 import DistortionScene from './components/DistortionScene'// Импортируем наши компоненты
 import ShadertoyScene from './components/ShadertoyScene'
 import ShadertoyScene_space01 from './components/ShadertoyScene_space01'
+import { SplitText } from './components/SplitText/SplitText';
 
 
 
@@ -41,9 +43,9 @@ function App() {
       <div className="card">        
         <h2>GSLS Shader N-01</h2>
         {/* Используем наш компонент с дисторшн-эффектом */}
-        <div>
-        <ShadertoyScene_space01/>
-          </div>
+        <Lazy3DPreview previewSrc="/previews/shader01.jpg">
+          <ShadertoyScene_space01 />
+        </Lazy3DPreview>
         <p className="text">
           Импорт шейдера GSLS (Fiber/Drei)
         </p>
@@ -53,7 +55,9 @@ function App() {
       <div className="card">        
         <h2>GSLS Shader N-02</h2>
         {/* Используем наш компонент с дисторшн-эффектом */}
-        <ShadertoyScene/>
+        <Lazy3DPreview previewSrc="/previews/shader02.jpg">
+          <ShadertoyScene/>
+        </Lazy3DPreview>
         <p className="text">
           Импорт шейдера GSLS (Fiber/Drei)
         </p>
@@ -82,7 +86,9 @@ function App() {
           minHeight: '100%'
         }}>
           <Suspense fallback={<div>Loading 3D model...</div>}>
-            <OMGScene  />
+            <Lazy3DPreview previewSrc="/previews/shader03.jpg">
+          <OMGScene/>
+        </Lazy3DPreview>
           </Suspense>
        
         <p className="text">
@@ -90,9 +96,9 @@ function App() {
         </p>
       </div></div>
 
-{/* Карточка 4 - TEXT MOTION */}
+{/* Карточка 5 - TEXT MOTION */}
       <div className="card">        
-        <h2>CSS Dynamic Font Animation</h2>
+        <h2>CSS Dynamic Font<br/> Animation</h2>
 
           {/*<h2 className="text-path">Тронь</h2>
           <h2 className="text-path2">буковки</h2>*/}
@@ -126,107 +132,92 @@ function App() {
         </p>         
       </div>
 
-{/*Карточка 4 - Text Changer*/}
-      <div className="card">        
-        <h2>Text Changer</h2>
-              {/* Панель слайдеров */}
-      <div style={{ 
-        backgroundColor: 'transparent',
-        padding: '20px',
-        borderRadius: '0px',
-        marginBottom: '10px'
-      }}>
-        {/* Слайдер для цвета */}
-        <div style={{ marginInline: '30%',marginBottom:'5%' }}>
-          <label className='slFont'>
-            <strong className='color01'>Color:</strong> {colorValue.toFixed(2)}
-          </label>
-          <input
-            type="range"
-            min="0"
-            max="1"
-            step="0.01"
-            value={colorValue}
-            onChange={(e) => setColorValue(parseFloat(e.target.value))}
-            style={{ 
-              width: '100%',
-              height: '3px',
-              cursor: 'pointer',
-              borderRadius: '100%',
-              background: 'linear-gradient(to right, #9400D3, #7FFFD4)',
-             // Убираем стандартный стиль
-              WebkitAppearance: 'none',
-              appearance: 'none',
-            }}
-          />
-          <div style={{ 
-            display: 'flex', 
-            justifyContent: 'space-between',
-            fontSize: '12px',
-            color: 'orange',
-            marginTop: '0px'
-          }}>
-            <span style={{color:'#9400D3',}}>Purple</span>
-            <span style={{color:'#7FFFD4',}}>Aqua marine</span>
-          </div>
-        </div>
-        
-        {/* Слайдер для масштаба */}
-        <div style={{ marginInline: '30%', marginBottom:'5%' }}>
-          <label className='slFont'>
-            <strong className='color01'>Scale:</strong> {scaleValue.toFixed(2)}x
-          </label>
-          <input
-            type="range"
-            min="0.5"
-            max="3"
-            step="0.1"
-            value={scaleValue}
-            onChange={(e) => setScaleValue(parseFloat(e.target.value))}
-            style={{ 
-              width: '100%',
-              height: '3px',
-              cursor: 'pointer',
-              borderRadius: '100%',
-              background: 'linear-gradient(to right, #272727, #dfdfdf)',
-             // Убираем стандартный стиль
-              WebkitAppearance: 'none',
-              appearance: 'none',
-            }}
-          />
-          <div style={{ 
-            display: 'flex', 
-            justifyContent: 'space-between',
-            fontSize: '12px',
-            color: 'orange',
-            marginTop: '0px'
-          }}>
-            <span style={{color:'#424242',}}>50%</span>
-            <span style={{color:'#838383',}}>100%</span>
-            <span style={{color:'#ffffff',}}>300%</span>
-          </div>
+{/*Карточка 7 - SplitText*/}
+      <div className="card">
 
-        </div>  
-              {/* Ваш существующий текст с добавлением color */}
-              <h1 style={{ 
-          fontSize: '1.5em', 
-          fontWeight: 'bold',
-          textAlign: 'center',
-          margin: '100px',
-          color: `rgb(${r}, ${g}, ${b})`,  // УНИВЕРСАЛЬНЫЙ ЦВЕТ
-          transform: `scale(${scaleValue})`,
-          transformOrigin: 'center center', // Масштабируем от центра
-          transition: 'all 0.1s ease' // Плавная анимация
-                }}>
-                SUPER<br/>
-                DUPER<br/>
-                FONT
-              </h1>
-        </div>          
-         <p className="text">
-          Изменения параметров текста через слайдер.
-        </p>
-      </div>
+         <div>
+      <h2>Java Text Animation N-01<br/>
+      SplitText</h2>
+
+      <p className="text">
+          Определяем входящий текст как отдельные символы и буквы. 
+          После анимируем через пресеты заводим как стили. 
+          Тайминги можно настраивать отдельно.
+      </p>  
+
+      <SplitText
+          preset="rotateIn"
+          paramsAnimate={{
+            duration: 0.1,
+            stagger: 0.01,
+            delay: 0.0,
+            direction: 'forward',
+            easing: 'ease-out'
+          }}
+          paramsFinal={{
+            duration: 0.1,
+            stagger: 0.01,
+            delay: 0.0,
+            direction: 'reverse',
+            easing: 'ease-in'
+          }}
+          trigger="hover"
+          splitBy="char"
+          style={{ fontSize: '200%', margin: '10%', cursor: 'pointer'}}
+        >
+        Анимация rotateIn
+      </SplitText>
+
+      <SplitText
+          preset="colorFadeWithFinal"
+          paramsAnimate={{
+            duration: 0.2,
+            stagger: 0.1,
+            delay: 0.0,
+            direction: 'forward',
+            easing: 'ease-out'
+          }}
+          paramsFinal={{
+            duration: 0.2,
+            stagger: 0.1,
+            delay: 0.0,
+            direction: 'reverse',
+            easing: 'ease-in'
+          }}
+          trigger="hover"
+          splitBy="char"
+          style={{ fontSize: '200%', margin: '10%', cursor: 'pointer'}}
+        >
+        Анимация colorFade
+      </SplitText>
+
+      <SplitText
+          preset="randomDrift"
+          paramsAnimate={{ duration: 0.3, stagger: 0.01, delay: 0.0, direction: 'forward',}}
+          hoverOutParams={{ duration: 0.3, stagger: 0.01, delay: 0.0, direction: 'reverse', easing: 'ease-in' }}
+
+          trigger="hover"
+          splitBy="char"
+          style={{ fontSize: '200%', margin: '10%', cursor: 'pointer'}}
+        >
+        Анимация randomDrift
+      </SplitText>
+
+
+      <SplitText
+          preset="customWave"
+          paramsAnimate={{ duration: 0.5, stagger: 0.01, delay: 0.0, direction: 'forward',}}
+          hoverOutParams={{ duration: 0.5, stagger: 0.01, delay: 0.0, direction: 'reverse', easing: 'ease-in' }}
+
+          trigger="hover"
+          splitBy="char" 
+          style={{ fontSize: '200%', margin: '10%', cursor: 'pointer'}}
+        >
+        Анимация customWave
+      </SplitText>
+    </div>
+
+         </div>
 
 
       </div>

@@ -7,22 +7,22 @@
 @media  (min-width: 20vw){  
 .wrapper {
   display: flex;
-  align-content: space-between; 
+  align-content: unsafe; 
   align-items: flex-start;  
-  justify-content: space-between;
+  justify-content: unsafe;
   flex-wrap:wrap;
-  margin: 1%; 
+  margin: 0.5%; 
 
 }}
 
 .card {
   width: 20%;
-  min-width: 300px;
-  margin: 1%;
-  padding: 1%; 
-  background-color: #141414;
-  border: 1px solid #4e4e4e;
-  /*border-radius: 40px;*/
+  min-width: 500px;
+  margin: 0.25%;
+  padding: 0.25%; 
+  background-color: #0e0e0e;
+  border: 1px solid #3d3d3d;
+  border-radius: 20px;
 }
 
 .wave-text {
@@ -253,7 +253,7 @@
 .text{
   font-size: 100%;
   line-height: 1.2;
-  font-family: 'Pixeloid Sans';
+  font-family: 'Inter';
   color: #7e7e7e;
   margin: 10px auto;
 }
