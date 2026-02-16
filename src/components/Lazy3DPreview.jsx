@@ -14,8 +14,6 @@ const Lazy3DPreview = ({ previewSrc, children, alt = '3D preview' }) => {
       }}
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
-      onTouchStart={() => setActive(true)}
-      onTouchEnd={() => setActive(false)}
     >
       {active ? (
         children

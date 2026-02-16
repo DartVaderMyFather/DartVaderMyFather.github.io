@@ -32,8 +32,7 @@ function App() {
   return (
     <>
       <div>
-        {/*<img src={fire} width={200} alt="Fire effect" />*/}  
-        <h1>Web React JSX frontend Motion Graphics Artem Grechko 2026</h1>
+        <p>Web React JSX frontend Motion Graphics Artem Grechko 2026</p>
       </div> 
 
 
@@ -107,13 +106,13 @@ function App() {
           Наведись на MOTION буквы....
            </p>            
          
-          <div class="wave-text">
-            <span class="letter">M</span>
-            <span class="letter">O</span>
-            <span class="letter">T</span>
-            <span class="letter">I</span>
-            <span class="letter">O</span>
-            <span class="letter">N</span>
+          <div className="wave-text">
+            <span className="letter">M</span>
+            <span className="letter">O</span>
+            <span className="letter">T</span>
+            <span className="letter">I</span>
+            <span className="letter">O</span>
+            <span className="letter">N</span>
         </div>       
 
         

@@ -20,3 +20,17 @@
   font-style: bold;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url('/fonts/Inter-Bold.ttf') format('truetype');
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('/fonts/Inter-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-display: swap;
+}

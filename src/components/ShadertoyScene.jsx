@@ -10,7 +10,11 @@ function ShadertoyScene() {
 
   
   return (
-    <div style={{justifySelf:'center',display:'flex',flexWrap:'wrap', width:'500px', height: '500px',}}>
+    <div style={{ 
+          alignItems: 'center',
+          width: '500px',
+          height: '500px',
+        }}>
       <Canvas>
         <ShadertoyPlane 
           size={8}
