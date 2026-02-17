@@ -16,14 +16,28 @@
 }}
 
 .card {
-  min-width: 320px;
-  max-width: 500px;
+  width: 320px;
+  height: 480px;
   margin: 5px;
   padding: 0.25%; 
   background-color: #0e0e0e;
   border: 1px solid #3d3d3d;
   border-radius: 20px;  
 }
+
+.card2 {
+  width: 320px;
+  height: 480px;
+  margin: 5px;
+  padding: 0.25%;   
+  border: 1px solid #3d3d3d;
+  border-radius: 20px;  
+  background: #7c7c7cdc url('/textures/water.jpg') no-repeat center/cover;
+  background-blend-mode: multiply;
+  
+}
+
+
 
 .wave-text {
   font-family:'Inconsolata-VF', 'Inconsolata', monospace;
@@ -285,3 +299,43 @@
 .read-the-docs {
   color: #888;
 }
+
+/*menu*/
+
+.header {
+  padding: 10px;
+}
+
+.nav button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  background: #4b4b4b;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav button.active {
+  background: #9939ff;
+  color: white;
+}
+
+
+.content {
+  padding: 20px;
+}
+
+@media(min-width: 20vw) {
+
+.nav button:hover {
+  background: #ff3def;
+  transform: scale(1.1);
+}
+
+.card2:hover {
+  border-radius: 40px;
+  transform: scale(0.9);  
+} 
+
+}
+ 

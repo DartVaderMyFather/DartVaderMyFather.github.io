@@ -6,7 +6,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   
-  background-color: #131314;
+  background-color: #161616;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,11 +43,12 @@ h2 {
   justify-self: center;
   display: flex;
   max-width: 500px;
-  font-size: 200%;
+  font-size: 150%;
   line-height: 1;
   font-family: 'InterTight-Bold';
-  color:rgb(153, 57, 255);
+  color:#9939ff;
 }
+
 
 button {
   border-radius: 25px;
@@ -57,17 +58,18 @@ button {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  background-color: #9900ff;
+  background-color: #9939ff;
   transition: border-color 0.5s;
 }
 
 button:hover {
-  border-color: #9900ff;
+  border-color: #ffd000;
   background-color: #303030;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  /*outline: 4px auto -webkit-focus-ring-color;*/
+  background-color: #ffc400;
 }
 
 @media (prefers-color-scheme: light) {
@@ -81,6 +83,5 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-
   
 }
