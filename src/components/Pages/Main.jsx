@@ -16,15 +16,7 @@ const Main = () => {
         <p className="text">
           Верстка в виде карточек
         </p>        
-      </div>      
-
-    {/* Карточка 2 - Bento frames */}
-      <div className="card2">
-        <h2>Bento frames</h2>
-        <p className="text">
-          Верстка в виде карточек
-        </p>      
-      </div>   
+      </div>       
     
     </div>
   );

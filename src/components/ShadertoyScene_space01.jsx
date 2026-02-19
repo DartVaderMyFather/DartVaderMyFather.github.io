@@ -10,14 +10,10 @@ function ShadertoyScene_space01() {
 
   
   return (
-    <div style={{ 
-          alignItems: 'center',
-          width: '500px',
-          height: '500px',
-        }}>
-      <Canvas>
+    <div >
+      <Canvas style={{ width: '100%', aspectRatio:'1/1' }}>
         <ShadertoyPlane_space01 
-          size={8}
+          size={10}
           rotation={[0, 0, 0]}
         />        
         <ambientLight intensity={1} />        

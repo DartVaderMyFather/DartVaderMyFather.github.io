@@ -36,7 +36,7 @@ useGLTF.preload('/models/OMG.gltf');
 export function OMGScene() {
   return (
     <Canvas 
-      style={{ justifySelf:'center', width:'100%', height: '500px', }}
+      style={{ width: '100%', aspectRatio:'1/1' }}
       camera={{ position: [30, 90, 30], fov: 2 }}
     >
       <ambientLight intensity={0} />

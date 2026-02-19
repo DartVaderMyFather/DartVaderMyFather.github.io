@@ -54,7 +54,10 @@ function App() {
     <div className="App">
       {/* Шапка с меню */}
       <header className="header">
+        <div className='logo'>WEBLAB</div>
         <nav className="nav">
+
+          
           <button
             className={activeTab === 'main' ? 'active' : ''}
             onClick={() => handleTabClick('main')}
@@ -82,6 +85,7 @@ function App() {
           >
             Разное
           </button>
+          <></>
 
         </nav>
       </header>

@@ -11,7 +11,7 @@ const Shaders = () => {
   return (
     <div className='wrapper'>
       {/* Карточка 1 - ShaderToy Shader */}
-      <div className="card">
+      <div className="cardShader">
         <h2>GSLS Shader N-01</h2>
         <Lazy3DPreview previewSrc="/previews/shader01.jpg">
           <ShadertoyScene_space01 />
@@ -20,7 +20,7 @@ const Shaders = () => {
       </div>
 
       {/* Карточка 2 - ShaderToy Shader */}
-      <div className="card">
+      <div className="cardShader">
         <h2>GSLS Shader N-02</h2>
         <Lazy3DPreview previewSrc="/previews/shader02.jpg">
           <ShadertoyScene />
@@ -29,7 +29,7 @@ const Shaders = () => {
       </div>
 
       {/* Карточка 3 - Distortion Shader */}
-      <div className="card">
+      <div className="cardShader">
         <h2>Distortion Shader</h2>
         <DistortionScene />
         <p className="text">
@@ -39,7 +39,7 @@ const Shaders = () => {
       </div>
 
       {/* Карточка 4 - 3D модель */}
-      <div className="card">
+      <div className="cardShader">
         <h2>3D Model Viewer</h2>
         <div style={{ background: 'transparent', alignItems: 'center', minWidth: '100%', minHeight: '100%' }}>
           <Suspense fallback={<div>Loading 3D model...</div>}>

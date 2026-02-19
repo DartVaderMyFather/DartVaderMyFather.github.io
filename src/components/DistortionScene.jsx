@@ -21,35 +21,26 @@ function DistortionScene() {
   const [selectedTexture, setSelectedTexture] = useState(0)
   
   return (
-    <div style={{ justifySelf:'center', width:'100%', height: '500px', }}>
-      <Canvas>
-        <DistortionPlane 
-          size={10}
+    <div >      
+      <Canvas style={{ width: '100%', aspectRatio:'1/1' }}>
+        <DistortionPlane          
+          size={12}
           intensity={intensity}
           speed={speed}
           textureUrl={TEXTURES[selectedTexture].url}
           textureIntensity={textureIntensity}
           rotation={[0, 0, 0]}
         />
-        
-        <ambientLight intensity={1} />
-        
+        <ambientLight intensity={1} />        
       </Canvas>
+      
       
       {/* Панель управления */}
       <div style={{
-        justifySelf:'center',
-        bottom: '5%',       
-        translate: '0% -120%',
-        background: 'rgba(31, 31, 31, 0.85)',
-        padding: '15px',
-        borderRadius: '10px',
-        display:'flex',
-        flexWrap:'wrap',
-        gap: '0px',
+        justifyContent:'center',
+        padding: '15px',        
+        display:'grid',        
         alignItems: 'center',
-        backdropFilter: 'blur(10px)',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
         maxWidth: '100%',
         zIndex: 100
       }}>

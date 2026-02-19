@@ -9,7 +9,7 @@ const Lazy3DPreview = ({ previewSrc, children, alt = '3D preview' }) => {
       style={{
         position: 'relative',
         width: '100%',
-        height: '100%',
+        aspectRatio:'1/1',      
         cursor: 'pointer',
       }}
       onMouseEnter={() => setActive(true)}
@@ -21,12 +21,7 @@ const Lazy3DPreview = ({ previewSrc, children, alt = '3D preview' }) => {
         <img
           src={previewSrc}
           alt={alt}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            display: 'block',
-          }}
+          style={{ width: '100%', aspectRatio:'1/1' }}
         />
       )}
     </div>
