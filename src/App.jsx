@@ -54,9 +54,10 @@ function App() {
     <div className="App">
       {/* Шапка с меню */}
       <header className="header">
-        <div className='logo'>WEBLAB</div>
-        <nav className="nav">
+        
+        <div className='logo'>WEB</div>
 
+        <nav className="nav">
           
           <button
             className={activeTab === 'main' ? 'active' : ''}
@@ -84,10 +85,18 @@ function App() {
             onClick={() => handleTabClick('other')}
           >
             Разное
-          </button>
-          <></>
+          </button>         
 
         </nav>
+         <button
+            className='hamburger'>
+              <svg width="24" height="24" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 7H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5 12H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5 17H19" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+          </button>     
+
       </header>
 
       {/* Основной контент */}
